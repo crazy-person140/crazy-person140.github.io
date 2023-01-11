@@ -192,6 +192,7 @@ class Game {
 
           // Changing camera position in y direction
           camera.position.y = cars[index - 1].position.y;
+          camera.position.x = cars[index - 1].position.x;
         }
       }
 
