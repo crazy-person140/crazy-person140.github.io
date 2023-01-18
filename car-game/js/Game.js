@@ -222,7 +222,7 @@ class Game {
   handleFuel(index) {
     // Adding fuel
     cars[index - 1].overlap(fuels, function(collector, collected) {
-      player.fuel = 185;
+      player.fuel += 50;
       //collected is the sprite in the group collectibles that triggered
       //the event
       collected.remove();
