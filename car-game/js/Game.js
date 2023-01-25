@@ -44,7 +44,19 @@ class Game {
 
     car2.addImage("blast", blastImage); //C42//SA
 
-    cars = [car1, car2];
+    car3 = createSprite(width / 2 - 50, height - 100);
+    car3.addImage("car3", car3_img);
+    car3.scale = 0.07;
+
+    car3.addImage("blast", blastImage);
+
+    car4 = createSprite(width / 2 + 100, height - 100);
+    car4.addImage("car4", car4_img);
+    car4.scale = 0.07;
+
+    car4.addImage("blast", blastImage);
+
+    cars = [car1, car2, car3, car4];
 
     fuels = new Group();
     powerCoins = new Group();
@@ -137,6 +149,13 @@ class Game {
 
     this.leader2.class("leadersText");
     this.leader2.position(width / 3 - 50, 130);
+    
+    this.leader3.class("leadersText");
+    this.leader3.position(width / 3 - 50, 180);
+
+    this.leader4.class("leadersText");
+    this.leader4.position(width / 3 - 50, 230);
+    
   }
 
   play() {
@@ -290,7 +309,7 @@ class Game {
       (players[0].rank === 0 && players[1].rank === 0) ||
       players[0].rank === 1
     ) {
-      // &emsp;    This tag is used for displaying four spaces.
+      // &emsp;   This tag is used for displaying four spaces.
       leader1 =
         players[0].rank +
         "&emsp;" +
