@@ -323,7 +323,7 @@ class Game {
         players[1].name +
         "&emsp;" +
         players[1].score;
-        
+
       leader3 =
         players[2].rank +
         "&emsp;" +
@@ -331,12 +331,12 @@ class Game {
         "&emsp;" +
         players[2].score;
 
-        leader4 =
+      leader4 =
         players[3].rank +
         "&emsp;" +
         players[3].name +
         "&emsp;" +
-        players
+        players[3].score;
     }
 
     if (players[1].rank === 1) {
