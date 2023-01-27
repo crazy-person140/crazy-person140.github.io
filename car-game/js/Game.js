@@ -323,6 +323,20 @@ class Game {
         players[1].name +
         "&emsp;" +
         players[1].score;
+        
+      leader3 =
+        players[2].rank +
+        "&emsp;" +
+        players[2].name +
+        "&emsp;" +
+        players[2].score;
+
+        leader4 =
+        players[3].rank +
+        "&emsp;" +
+        players[3].name +
+        "&emsp;" +
+        players
     }
 
     if (players[1].rank === 1) {
